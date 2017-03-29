@@ -1,0 +1,80 @@
+h5{
+  position: absolute;
+  left: 150px;
+}
+
+#map{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 600px;
+  height: 600px;
+}
+
+#north-arrow{
+  position: absolute;
+  left: 60px;
+  top: 600px;
+  z-index: 1000;
+}
+
+#north-arrow p{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#div-slider,
+#switches{
+  position: absolute;
+  left: 50px;
+}
+
+#div-slider{
+  left: 30px;
+  top: 85%;
+}
+
+#switches{
+  top: 75%;
+}
+
+#legend{
+  position: absolute;
+  left:660px;
+  top: 525px;
+}
+
+#legend table tr td:first-child{
+  width: 50px;
+}
+
+#legend table tr td:last-child{
+  width: 80px;
+}
+
+td div{
+  height: 15px;
+  width: 80%;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+#legend-fill-1{
+  background-color: rgba(237, 248, 251, 0.8);
+}
+
+#legend-fill-2{
+  background-color: rgba(179, 205, 227, 0.8)
+}
+
+#legend-fill-3{
+  background-color: rgba(140, 150, 198, 0.8)
+}
+
+#legend-fill-4{
+  background-color: rgba(136, 86, 167, 0.8)
+}
+
+#legend-fill-5{
+  background-color: rgba(129, 15, 124, 0.8)
+}
