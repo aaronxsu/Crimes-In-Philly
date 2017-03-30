@@ -79,6 +79,11 @@ var setFillColorStatic = function(breaks, count){
   }
 }
 
+//------------------------------------------------------
+//    set census tract layer style
+//    according to static or dynamic classes
+//------------------------------------------------------
+
 var setLayerStyle = function(year){
   layerCrimesTract.setStyle(function(features){
     if($('#option-1').prop('checked')){
@@ -90,10 +95,12 @@ var setLayerStyle = function(year){
   })
 }
 
-var setLayerTooltip = function(year){
-
-}
-
+//------------------------------------------------------
+//    when the mouse is over a census tract, highlight
+//    and show crime count
+//    when the mouse moves out of a census tract,
+//    set style back to normal
+//------------------------------------------------------
 var setLayerMouseMove = function(year){
   layerCrimesTract.eachLayer(function(layer){
     layer.on('mouseover', function(e){
@@ -114,18 +121,26 @@ var setLayerMouseMove = function(year){
   })
 }
 
+//------------------------------------------------------
+//              set dynamic legend text
+//------------------------------------------------------
 var setLegendTextDynamic = function(year){
   var breaks = crimeCountsBreaksYear[yearColumnMap[year.toString()]];
   setLegendTextStatic(breaks)
 }
 
+//------------------------------------------------------
+//              set static legend text
+//------------------------------------------------------
 var setLegendTextStatic = function(breaks){
   _.each(_.range(0, 5), function(number){
     $('#legend-text-'+ (number+1).toString()).text(breaks[number].toString() + ' - ' + breaks[number + 1].toString())
   })
 };
 
-
+//------------------------------------------------------
+//              the slide function
+//------------------------------------------------------
 var slide = function(){
   _.each(_.range(2009, 2017), function(year, i) {
     _.delay(function(){
@@ -138,7 +153,7 @@ var slide = function(){
       }else if($('#option-1').prop('checked')){
         setLegendTextStatic(breaksCrimeCountValues);
       }
-    }, i * 1500)
+    }, i * 800)
   });
 }
 

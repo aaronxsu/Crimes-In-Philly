@@ -1,7 +1,7 @@
 h5{
   position: absolute;
   left: 150px;
-  top:0px;
+  top: 0px;
 }
 
 #map{
@@ -21,6 +21,13 @@ h5{
   font-weight: bold;
 }
 
+#title-month{
+  position: absolute;
+  left: 530px;
+  z-index: 1000;
+  top: 60px;
+}
+
 #north-arrow{
   position: absolute;
   left: 60px;
@@ -33,31 +40,25 @@ h5{
   font-weight: bold;
 }
 
-#div-slider,
-#switches{
+#div-slider{
   position: absolute;
-  left: 50px;
 }
 
 #div-slider{
   left: 50px;
-  top: 760px;
+  top: 680px;
 }
 
-#monthly-page{
+#yearly-page{
   position: absolute;
-  left: 460px;
-  top: 850px;
-}
-
-#switches{
-  top: 650px;;
+  left: 30px;
+  top: 750px;
 }
 
 #legend{
   position: absolute;
   left:660px;
-  top: 525px;
+  top: 515px;
 }
 
 #legend table tr td:first-child{
@@ -76,21 +77,21 @@ td div{
 }
 
 #legend-fill-1{
-  background-color: rgba(237, 248, 251, 0.8);
+  background-color: rgba(255, 255, 178, 0.8);
 }
 
 #legend-fill-2{
-  background-color: rgba(179, 205, 227, 0.8)
+  background-color: rgba(254, 204, 92, 0.8)
 }
 
 #legend-fill-3{
-  background-color: rgba(140, 150, 198, 0.8)
+  background-color: rgba(253, 141, 60, 0.8)
 }
 
 #legend-fill-4{
-  background-color: rgba(136, 86, 167, 0.8)
+  background-color: rgba(240, 59, 32, 0.8)
 }
 
 #legend-fill-5{
-  background-color: rgba(129, 15, 124, 0.8)
+  background-color: rgba(189, 0, 38, 0.8)
 }

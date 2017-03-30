@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h5>Crimes by Census Tract in <span id='title-year'></span>, Philadelphia, PA</h5>
+  <h5>Crimes by Census Tract in Philadelphia, PA</h5>
+
+  <div><p id='title-year' style="font-size: 22px;"></p></div>
 
   <div id='map'></div>
 
@@ -41,7 +43,7 @@
     </table>
   </div>
   <div id='switches'>
-    <h6>Legend Classes</h6>
+    <h6>Legend Classes:</h6>
     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
       <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
       <span class="mdl-radio__label">Static</span>
@@ -50,13 +52,15 @@
       <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
       <span class="mdl-radio__label">Dynamic</span>
     </label>
-    <a href='monthly.html'>Monthly</a>
   </div>
   <div id='div-slider'>
-    <button class="mdl-button mdl-js-button mdl-button--primary" id='play'>Play</button>
-    <p style="width: 650px;">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id='play'>Play</button>
+    <p style="width: 620px; margin-top:20px;">
       <input class="mdl-slider mdl-js-slider" id='year-slider' type="range" min="2009" max="2016" value="0" tabindex="0">
     </p>
+  </div>
+  <div id='monthly-page'>
+    <a href='monthly.html'><button class="mdl-button mdl-js-button mdl-button--accent">View Monthly Maps<i class="material-icons">forward</i></button></a>
   </div>
 
 
